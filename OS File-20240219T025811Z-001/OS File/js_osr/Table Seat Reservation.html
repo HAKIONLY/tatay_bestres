@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Restaurant Seat Reservation</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/jquery.seat-charts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.seat-charts.js"></script>
+</head>
+
+<body>
+    <div class="tatay-backg">
+        <style>
+            body {
+              background-image: url("Tatay Best.jpg");
+              background-color: #cccccc;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+            }
+            </style>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="grid-50">
+                    <div id="seat-map">
+                        <div class="front-indicator">Table Seat Reservation</div>
+                        <h4 class="text-muted fw-bold text-center" style="padding-left:3em; margin:.5em">From Front Row</h4>
+                        <div id="table-seat-map"></div>
+                        <h4 class="text-muted fw-bold text-center" style="padding-left:3em; margin:.5em">End of Seat Row</h4>
+                    </div>
+                </div>
+                <div class="grid-50">
+                    <div class="booking-details">
+
+                        <form action="" method="post">
+                            <label for="username">Type your Name:</label>
+                            <input type="text" id="username" name="username" required>
+                            <h2>Booking Details</h2>
+
+                            <h3> Selected Seats (<span id="counter">0</span>):</h3>
+                            <ul id="selected-seats"></ul>
+
+                            <h2>Total: <b>₱<span id="total">0</span></b></h2>
+
+
+                            <button type="button" id="checkout-button">Submit Book</button>
+
+                        </form>
+                        <div id="legend"></div>
+                        <button id="reset-btn" type="button">Reset Table Seat</button>
+                        <div class="Goback">
+                            <button>
+                                <a href="file:///D:/OS%20file/OS%20File/Tatay%20Bestres%20Sinilab%201.html#reserve">
+                                    <h1>Go back to Page</h1>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
